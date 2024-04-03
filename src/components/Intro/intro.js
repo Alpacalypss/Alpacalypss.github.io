@@ -1,11 +1,10 @@
 import React from "react";
 import "./intro.css";
 import bg from "../../images/me4Cropped.jpg";
-import btnImg from "../../images/hireme.png";
-import { Link } from "react-scroll";
 
 const intro = () => {
   return (
+    <>
     <section id="intro">
       <div className="introContent">
         <span className="hello">Hello,</span>
@@ -19,15 +18,16 @@ const intro = () => {
           knowledge, utilize <br /> my skills in collaborative efforts, and to
           make functional, innovative applications I can be proud of. <br />
         </p>
-        <Link>
+        <a href="https://docs.google.com/document/d/1rNjL5D9fsjC8hT53ngDW-G2CQ88-35iKS-78ShErKPY/edit?usp=sharing" target="_blank" rel="noreferrer">
           <button className="btn">
-            <img src={btnImg} alt="Hire Me" className="btnImg" />
-            Hiring?
+            My Resume
           </button>
-        </Link>
+          </a>
       </div>
       <img src={bg} alt="Me!" className="bg" />
     </section>
+    <hr></hr>
+    </>
   );
 };
 

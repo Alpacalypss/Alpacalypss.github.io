@@ -7,6 +7,7 @@ import "./works.css";
 
 const works = () => {
   return (
+    <>
     <section id="works">
       <h2 className="worksTitle">My Portfolio</h2>
       <span className="worksDescription">
@@ -37,6 +38,8 @@ const works = () => {
         <button className="worksBtn">See Repositories</button>
       </a>
     </section>
+    <hr></hr>
+    </>
   );
 };
 
