@@ -1,53 +1,57 @@
 import React, { useState } from "react";
 import { ArrowBigLeft, ArrowBigRight, CircleDot, Circle } from "lucide-react";
 import "./hobbyImages.css";
+import benedict from "../../images/benedict.jpg";
+import fire from "../../images/fire.jpg";
+import yard from "../../images/yard.jpg";
+import kafta from "../../images/kafta.jpg";
+import pad from "../../images/pad-thai.jpg";
 
-const HobbyImages = ({ slider_images }) => {
+const images = [
+  { url: benedict, alt: "Cross-section of eggs benedict w/ runny yolk" },
+  { url: fire, alt: "A 4 leaf clover of fire" },
+  { url: yard, alt: "Flagstone path in my yard" },
+  { url: kafta, alt: "A beautiful malai kafta w/ pita bread" },
+  {
+    url: pad,
+    alt: "A countertop skillet full of pad thai, garnished with peanuts and thai basil",
+  },
+];
+
+const HobbyImages = () => {
   const [imageIndex, setImageIndex] = useState(0);
 
   function showNextImage() {
     setImageIndex((index) => {
-      if (index === slider_images.length - 1) return 0;
-      return index + 1;
+      if (index === images.length - 1) return 0;
+      console.log(imageIndex)
+      return index += 1;
     });
   }
 
   function showPreviousImage() {
     setImageIndex((index) => {
-      if (index === 0) return slider_images.length - 1;
+      if (index === 0) return images.length - 1;
       return index - 1;
     });
   }
 
   return (
     <section
+      id="hobby"
       aria-label="Image-Slider"
-      style={{ width: "100%", height: "100%", position: "relative" }}
     >
-      <div
-        style={{
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          overflow: "hidden",
-        }}
-      >
-        {slider_images.map((url, alt, index) => (
+      <div className="images">
+        {images.map((image) => (
           <img
-            key={url}
-            src={url}
-            alt={alt}
-            aria-hidden={imageIndex !== index}
+            key={image.url}
+            src={image.url}
+            alt={image.alt}
             className="img-slider-img"
-            style={{ translate: `${-100 * imageIndex}` }}
+            style={{ translate: `${-100 * imageIndex}%` }}
           />
         ))}
       </div>
-      <img
-        src={slider_images[imageIndex]}
-        alt="Reel of some of my hobbies."
-        className="img-slider-img"
-      />
       <button
         onClick={showPreviousImage}
         className="img-slider-btn"
@@ -64,16 +68,8 @@ const HobbyImages = ({ slider_images }) => {
       >
         <ArrowBigRight aria-hidden />
       </button>
-      <div
-        style={{
-          position: "absolute",
-          bottom: "0.5rem",
-          left: "50%",
-          translate: "-50%",
-          gap: "0.25rem",
-        }}
-      >
-        {slider_images.map((_, index) => (
+      <div className="img-slider-dots">
+        {images.map((_, index) => (
           <button
             key={index}
             className="img-slider-dot-btn"
