@@ -10,3 +10,25 @@
     margin: 0 auto;
 }
 
+.historyTitle {
+    color: rgb(184, 35, 122);
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.list {
+    margin-bottom: 2rem;
+}
+
+.bullet {
+    color:rgb(212, 200, 200);
+}
+
+hr { 
+    height: 30px;
+    margin: 5rem 25% 0 25%; 
+    border-style: solid; 
+    border-color: #8c8b8b; 
+    border-width: 3px 0 0 0; 
+    border-radius: 2rem; 
+} 

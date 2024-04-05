@@ -7,6 +7,7 @@ import WebsiteDesign from "../../images/website-design.png";
 
 const skills = () => {
   return (
+    <>
     <section id="skills">
       <span className="skillTitle">What I do</span>
       <span className="skillDescription">
@@ -71,6 +72,8 @@ const skills = () => {
         </div>
       </div>
     </section>
+    <hr></hr>
+    </>
   );
 };
 

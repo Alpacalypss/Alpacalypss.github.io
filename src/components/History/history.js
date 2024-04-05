@@ -3,11 +3,22 @@ import "./history.css";
 
 const History = () => {
   return (
+    <>
     <section id="history">
-      <h1 className="historyTitle">A Brief Overview Of Me</h1>
+      <h1 className="historyTitle">A Brief Overview of Me</h1>
       <span className="historyMe">
-        For most of my life I have bounced around from hobby to hobby. My
-        hobbies include, landscaping, skateboarding, cooking, gymnastics,
+        For most of my life I have bounced around from hobby to hobby. My eclectic list of hobbies includes:
+        <ul className="list">
+          <li className="bullet">Landscaping</li> 
+          <li className="bullet">Skateboarding</li>
+          <li className="bullet">Cooking</li>
+          <li className="bullet">Gymnastics</li>
+          <li className="bullet">Rock Climbing</li>
+          <li className="bullet">Fire Spinning</li>
+          <li className="bullet">Gaming(all kinds!)</li> 
+          <li className="bullet">And plenty more!</li>
+        </ul> 
+        landscaping, skateboarding, cooking, gymnastics,
         rockclimbing, fire spinning, and gaming, as well as many others. My
         favorite thing in the world is constantly being able to learn and expand
         on things I already know. During and right out of highschool I began
@@ -26,11 +37,13 @@ const History = () => {
         creatively to solve problems like I did in school. I knew I did not want
         to continue pursuing my physics/engineering degree, so I decided to
         check out computer science, and software engineering. I immediately was
-        in love with the field. All of the sudden I went from bored, to seeing
+        in love with the field. All of the sudden I went from bored and unchallenged, to seeing
         something with endless possibilities that I could spend the rest of my
         life learning and never truly master all aspects of.
       </span>
     </section>
+    <hr></hr>
+    </>
   );
 };
 
