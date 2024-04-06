@@ -11,17 +11,23 @@
 }
 
 .historyTitle {
+    margin-bottom: 1rem;
+    font-size: 3rem;
     color: rgb(184, 35, 122);
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 .list {
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 .bullet {
     color:rgb(212, 200, 200);
+}
+
+.historyMe {
+    margin-bottom: 4rem;
 }
 
 hr { 

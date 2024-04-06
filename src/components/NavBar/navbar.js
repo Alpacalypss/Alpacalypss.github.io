@@ -54,10 +54,17 @@ const Navbar = () => {
           History
         </Link>
       </div>
-      <button className="desktopMenuBtn">
+      <Link
+        to="contact"
+        spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}
+        className="desktopMenuBtn"
+      >
         <img src={contact} alt="contact me" className="desktopMenuImg" />
         Contact Me
-      </button>
+      </Link>
     </nav>
   );
 };

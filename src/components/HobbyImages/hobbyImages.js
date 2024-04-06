@@ -24,8 +24,7 @@ const HobbyImages = () => {
   function showNextImage() {
     setImageIndex((index) => {
       if (index === images.length - 1) return 0;
-      console.log(imageIndex)
-      return index += 1;
+      return index + 1;
     });
   }
 
@@ -37,16 +36,13 @@ const HobbyImages = () => {
   }
 
   return (
-    <section
-      id="hobby"
-      aria-label="Image-Slider"
-    >
+    <section id="hobby" aria-label="Image-Slider">
       <div className="images">
-        {images.map((image) => (
+        {images.map(({ url, alt } = images) => (
           <img
-            key={image.url}
-            src={image.url}
-            alt={image.alt}
+            key={url}
+            src={url}
+            alt={alt}
             className="img-slider-img"
             style={{ translate: `${-100 * imageIndex}%` }}
           />
