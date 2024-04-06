@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eeaeb614.css",
+    "main.js": "/static/js/main.effc4d82.js",
+    "static/media/logo.png": "/static/media/logo.e6e8a66349bcafc5a4bc.png",
+    "static/media/pad-thai.jpg": "/static/media/pad-thai.1c8f943c96ef99ec3d2f.jpg",
+    "static/media/benedict.jpg": "/static/media/benedict.ed67a9cb0d7667c879cd.jpg",
+    "static/media/Home.jpg": "/static/media/Home.af8cbf885222ccb42b0a.jpg",
+    "static/media/yard.jpg": "/static/media/yard.059536218a49ae183d51.jpg",
+    "static/media/fire.jpg": "/static/media/fire.19547a29d97df3081fa1.jpg",
+    "static/media/kafta.jpg": "/static/media/kafta.8df036f876748a2773e0.jpg",
+    "static/media/Reservation.jpg": "/static/media/Reservation.a849ec1fbeeb1eaccf65.jpg",
+    "static/media/Py.png": "/static/media/Py.ecfb4e6faf26def45e95.png",
+    "static/media/home-page.JPG": "/static/media/home-page.335ecb702045977d67b5.JPG",
+    "static/media/me4Cropped.jpg": "/static/media/me4Cropped.cd43bfad3cd63e3e25f4.jpg",
+    "static/media/sudoku.jpg": "/static/media/sudoku.615f803f230ec5f38f00.jpg",
+    "static/media/SQL.png": "/static/media/SQL.79aeda31e982577702bf.png",
+    "static/media/Discord.svg": "/static/media/Discord.aacf52255cf18269e174e6e237f764b3.svg",
+    "static/media/Github.svg": "/static/media/Github.837803143c3c56e33d7661b5f6e41485.svg",
+    "index.html": "/index.html",
+    "static/media/LinkedIn.svg": "/static/media/LinkedIn.c5b0b1b4792c4adac01506428d371c41.svg",
+    "static/media/Twitter.svg": "/static/media/Twitter.63e6aefc8ecac35cc4c791e1f6b6bd8d.svg",
+    "main.eeaeb614.css.map": "/static/css/main.eeaeb614.css.map",
+    "main.effc4d82.js.map": "/static/js/main.effc4d82.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eeaeb614.css",
+    "static/js/main.effc4d82.js"
+  ]
+}
