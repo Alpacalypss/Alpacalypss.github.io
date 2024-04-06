@@ -11,7 +11,11 @@
 }
 
 .contactPageTitle {
+    margin: 1rem 0;
+    font-size: 3rem;
     color: rgb(184, 35, 122);
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 .contactForm {
@@ -37,8 +41,7 @@
 }
 
 .submitBtn {
-    background: rgb(50, 50, 50);
-    color: rgb(212, 200, 200);
+    background: rgb(168, 58, 123);
     border: none;
     border-radius: 0.5rem;
     margin: 2rem;
@@ -61,4 +64,7 @@
     height: 3rem;
     width: 3rem;
     margin: 0.75rem;
+}
+.link:hover {
+    cursor: pointer;
 }
