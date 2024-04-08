@@ -51,7 +51,7 @@ const Navbar = () => {
           duration={500}
           className="desktopMenuListItem"
         >
-          History
+          About
         </Link>
       </div>
       <Link
